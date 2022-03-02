@@ -1,39 +1,7 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="author" content="Alex" />
-    <meta name="keywords" content="HTML, CSS, Astro" />
-    <title>BECAS DEPORTIVAS</title>
-    <!-- <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} /> -->
-    
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <div id="logo">
-          <!-- Aquí irá el logo -->
-          <a href="/home">
-            <img class="logo" src="/assets/logo.svg" />
-          </a>
-        </div>
-        <div id="menu">
-          <!-- Aquí irá el listado de opciones -->
-          <ul>
-            <li>
-              <a href="/about">Acerca de</a>
-            </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-            <li>
-              <a href="/contact">Contacto</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> <!-- header -->
-    <!-- ======= Bloque de página ======= -->
-    <div class="main">
+--- 
+  import BaseLayout from '../layouts/BaseLayout.astro'
+---
+<BaseLayout title="Blog">
       <h1>Blog</h1>
       <p>Últimas entradas de mi blog</p>
       <div class="blog-post">
@@ -44,25 +12,5 @@
           <p>Pellentesque non ipsum eget nibh dapibus sodales. Aliquam pretium a risus non facilisis. Nunc ante sem, efficitur sed tincidunt et, pharetra eget tellus. In pellentesque facilisis eros, at condimentum enim facilisis nec. Curabitur ex mi, commodo ac posuere vitae, tempor et nulla. Aliquam erat volutpat. Nam tincidunt, dolor et laoreet dictum, velit urna sollicitudin lorem, nec rhoncus magna velit eget ante. Sed nec accumsan augue, in fermentum justo. Aenean in lectus egestas, auctor nisl vitae, pellentesque magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus quis tortor non libero ullamcorper pharetra vel eu nunc. Nullam luctus felis ac justo blandit sollicitudin vehicula in massa.</p>
         </div>
       </div>
-    </div>
-    <!-- ======== Pie de página ========= -->
-    <div class="foot">
-      <p>Proyecto para la asignatura de Tecnologías de la Información I de Escuela IDEO</p>
-      <p>Autor de la página: Alejandro García</p>
-      
-      <div class="links">
-        <ul>
-          <li>
-            <a href="/about">Acerca de</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/contact">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+    
+</BaseLayout title="Blog">
